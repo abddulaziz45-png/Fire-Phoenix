@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Структура проекта - Fire & Phoenix</title>
+    <style>
+        @page { margin: 2.5cm; }
+        body {
+            font-family: 'Times New Roman', serif;
+            font-size: 12pt;
+            line-height: 1.6;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 { font-size: 18pt; font-weight: bold; text-align: center; margin-bottom: 10px; color: #2c3e50; }
+        h2 { font-size: 14pt; font-weight: bold; margin-top: 20px; margin-bottom: 10px; color: #34495e; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+        h3 { font-size: 13pt; font-weight: bold; margin-top: 15px; margin-bottom: 10px; color: #555; }
+        .metadata { text-align: center; margin-bottom: 30px; padding: 15px; background-color: #f8f9fa; border: 1px solid #dee2e6; }
+        .structure { background-color: #f8f9fa; padding: 15px; margin: 15px 0; border-left: 4px solid #3498db; font-family: 'Courier New', monospace; }
+        ul { margin-left: 30px; }
+        li { margin-bottom: 5px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #34495e; color: white; }
+        footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 10pt; color: #666; }
+    </style>
+</head>
+<body>
+    <h1>Структура проекта</h1>
+    <h1 style="font-size: 14pt; font-weight: normal;">Fire & Phoenix - Chicago 1871</h1>
+    
+    <div class="metadata">
+        <div><strong>Авторы:</strong> Abdulaziz Abdumajidov и Gülcihan Saçlı</div>
+        <div><strong>ВУЗ:</strong> Politecnico di Torino</div>
+        <div><strong>Дисциплина:</strong> Digital Heritage</div>
+        <div><strong>Дата:</strong> 2025</div>
+    </div>
+
+    <h2>1. Архитектура проекта</h2>
+    <p>Сайт состоит из 10 основных разделов, организованных в одностраничном формате с плавной навигацией.</p>
+
+    <h3>1.1 Структура сайта</h3>
+    <div class="structure">
+        Header (sticky navigation)<br>
+        → Animation Banner (Canvas effects)<br>
+        → Hero Section<br>
+        → Section 1: "Where did it begin?"<br>
+        → Section 2: "Fire Ignition Animation"<br>
+        → Section 3: "Press vs Map Slider"<br>
+        → Section 4: "Ruin Cult to Hope"<br>
+        → Section 5: "Detailed Timeline"<br>
+        → Section 6: "Video Gallery"<br>
+        → Section 7: "Cow Myth"<br>
+        → Section 8: "Interactive Game"<br>
+        → Section 9: "Quiz (30 questions)"<br>
+        → Section 10: "Legacy & Consequences"<br>
+        → Footer
+    </div>
+
+    <h2>2. Технические модули</h2>
+    
+    <h3>2.1 Основные компоненты</h3>
+    <ul>
+        <li><strong>main.js</strong> - инициализация, переключение языков, поиск</li>
+        <li><strong>slider.js</strong> - интерактивный слайдер пресса vs карты</li>
+        <li><strong>canvas-animations.js</strong> - эффекты огня, искр, пепла (3 слоя)</li>
+        <li><strong>game.js</strong> - интерактивная игра "Спасти Чикаго"</li>
+        <li><strong>quiz.js</strong> - система викторины (30 вопросов)</li>
+        <li><strong>timeline.js</strong> - видеоплеер временной линии</li>
+    </ul>
+
+    <h3>2.2 Организация файлов</h3>
+    <table>
+        <thead>
+            <tr><th>Папка</th><th>Содержимое</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>images/</td><td>Исторические фото, иллюстрации прессы, карты</td></tr>
+            <tr><td>videos/</td><td>Анимации временной линии, видео (7+ файлов)</td></tr>
+            <tr><td>audio/</td><td>Многоязычные аудиозаписи</td></tr>
+        </tbody>
+    </table>
+
+    <h2>3. Цветовая палитра</h2>
+    <table>
+        <thead>
+            <tr><th>Элемент</th><th>Цвет</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Градиент огня</td><td>#000000 → #7a1b0c</td></tr>
+            <tr><td>Основной акцент</td><td>#fb5607 (красный огня)</td></tr>
+            <tr><td>Вторичный акцент</td><td>#ffb703 (желтый пламени)</td></tr>
+            <tr><td>Цвет успеха</td><td>#52b788 (зеленый)</td></tr>
+            <tr><td>Цвет предупреждения</td><td>#ff6b6b (красный)</td></tr>
+        </tbody>
+    </table>
+
+    <h2>4. Типографика</h2>
+    <ul>
+        <li>Заголовки: верхний регистр, жирный, с эффектами свечения</li>
+        <li>Основной текст: 16px, line-height 1.6</li>
+        <li>Семейство шрифтов: системные, Segoe UI</li>
+        <li>Адаптивные размеры с функцией clamp()</li>
+    </ul>
+
+    <footer>
+        <p>© 2025 Abdulaziz Abdumajidov, Gülcihan Saçlı | Politecnico di Torino</p>
+        <p>Fire & Phoenix - Digital Heritage Project</p>
+    </footer>
+</body>
+</html>
+
+
+
